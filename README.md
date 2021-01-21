@@ -8,7 +8,9 @@
   scripts内のコードでは4字×5回になっているがどちらも可変可能になっており、難易度の調整が簡単に行うことができる。
   
   また、大英字を追加することもできる。
-- 動作環境
+  
+  今までのFalseの回数が見れるようにFalseになる度にpublisherからデータを飛ばしています。 
+  - 動作環境
 
 RaspberryPi4
 
@@ -38,6 +40,10 @@ chmod +x rand_a.py
 roscore &
 
 rosrun roshw rand_a.py
+
+二つ目のターミナルを開いて以下を打ち込むとFalseの回数が確認できます。
+
+rostopic echo /prac_up
 - ライセンス
 
 BSD-3-clause License
